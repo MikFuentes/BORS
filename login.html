@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>Log in to BORS | BORS</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+    <body>
+        <div>
+            <h1>Barangka Online Registration System</h1>
+        </div>
+        <div id="pane">
+            <div id="content">
+                <div>
+                    <h2>Log in to BORS</h2>
+                    <form method="post" action="loginConnect.php">
+                        <input type="text" 
+                               name="userID" 
+                               placeholder="User ID"><br>
+                        <input type="password" 
+                               name="password" 
+                               placeholder="Password"><br>
+                        <!-- 
+                        Should link to either adminHome.html or studentHome.html
+                        -->
+                        <script type = "text/javascript">
+                          function xd(login){
+                            window.location.replace("loginConnect.php");
+                          }
+                        </script>
+                        <div class=submit>
+                            <input class="MyButton" 
+                                   type="submit" 
+                                   value="Login" onclick="login()"/>
+                        </div>   
+                        <a href="regform.html">
+                            <h3>New student applying for Barangka?</h3>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy;2018 BORS-ConnectSix.
+        </div>
+    </body>
+</html>

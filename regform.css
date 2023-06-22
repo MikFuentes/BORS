@@ -1,0 +1,94 @@
+body {
+    background-color: #233e62;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    background-color: #233e62;
+    color:white;
+    font-size: 50px;
+    margin-bottom: 10;
+    margin-top: 40;
+    margin-left: 10;
+}
+
+#pane{
+    background-color: #304e75;
+    border-color: white;
+    border-style:solid;
+    padding: 50;
+    border-radius: 10px;
+    padding-top: 40;
+}
+
+#content{
+    background-color:white;
+    padding: 5 50 50 50;
+    font-size:12;
+    border-radius: 8px;
+    margin: 0 100 0 100;
+}
+
+#registration h3{
+    text-align: center;
+    font-size:40;
+    margin: 30 0 30 0;
+    color: #093754;
+}
+
+h3{
+    color:#093754;
+    font-size: 30px;
+    text-align:left;
+    margin: 30 0 10;
+}
+
+h4{
+    color:red;
+}
+
+label{
+    color:#093754;
+    font-size: 17px;
+}
+
+form input{
+    width: 100%;
+    padding:5; 
+    align-self:auto;
+    margin: 3 0 10 0;
+}
+
+form select{
+    width: 100%;
+    font-size: 12px;
+    align-self: auto;
+    border: none;
+    background-color: #f1f1f1;
+    margin: 3 0 10 0;
+}
+
+.submit{
+    text-align: center;
+}
+
+input.MyButton{
+    width: 300px;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 130%;
+    background: #304e75;
+    color: white;
+    border-radius: 8px;
+}
+
+input.MyButton:hover{
+    background-color: #233e62;
+}
+
+#footer{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10
+}

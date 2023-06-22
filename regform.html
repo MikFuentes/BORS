@@ -1,0 +1,271 @@
+<html>
+<head>
+    <title>Registration Form | BORS</title>
+    <link rel="stylesheet" href="regform.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+    <body>
+        <div>
+            <h1>Barangka Online Registration System</h1>
+        </div>
+        <div id="pane">
+            <div id="content">
+                    <form method="post" action="connect.php">
+                        <div id=registration>
+                            <h3>Barankga Registration Form</h3>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Registration Information</h3>
+                        </div>
+                        <div>
+                            <h4>Please fill out the entire form. Write N/A where necessary.</h4>
+                        </div>
+
+                        <label>Registration Date:</label>
+                        <input type="date" 
+                               name="regDate"  
+                               placeholder="" 
+                               required><br>
+
+                        <label>Grade Level:</label>
+                        <select name='gradeLevel'>
+                            <option value="Seven">7</option>
+                            <option value="Eight">8</option>
+                            <option value="Nine">9</option>
+                            <option value="Ten">10</option>
+                            <option value="Eleven">11</option>
+                            <option value="Twelve">12</option>
+                        </select><br>
+
+                        <div>
+                            <h3>Education History</h3>
+                        </div>
+
+                        <label>Previous School:</label>
+                        <input type="text" 
+                               name="pSchool" 
+                               placeholder="e.g. Cool School" 
+                               required><br>
+
+                        <label>Current School:</label>
+                        <input type="text" 
+                               name="cSchool" 
+                               placeholder="e.g. Not So Cool School" required><br>
+
+                        <label>Grade Level Attainment:</label>
+                        <input type="number" 
+                               name="gradeAttainment" 
+                               placeholder="e.g. 100" 
+                               required 
+                               max=100 
+                               min=0><br>
+
+                        <div>
+                            <h3>Student Information</h3>
+                        </div>
+
+                        <label>LRN:</label>
+                        <input type="number" 
+                               name="lrn" 
+                               placeholder="" 
+                               placeholder="Enter your 15-digit Learner Reference Number" 
+                               mix=0 
+                               max=999999999999999 
+                               required><br>
+
+                        <label>First Name:</label>
+                        <input type="text" 
+                               name="fName" 
+                               placeholder="e.g. Chris" 
+                               required><br>
+
+                        <label>Middle Name:</label>
+                        <input type="text" 
+                               name="mName" 
+                               placeholder="e.g. Paul" 
+                               required 
+                               min=0 
+                               max=100><br>
+
+                        <label>Last Name:</label>
+                        <input type="text" 
+                               name="lName" 
+                               placeholder="e.g. Bacon" 
+                               required><br>
+
+                        <label>Gender:</label>
+                        <select name="Gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select><br>
+
+                        <label>Birthdate:</label>
+                        <input type="date" 
+                               name="birthDate" 
+                               max="1900-00-00" 
+                               min="2019-00-00" 
+                               placeholder="" 
+                               required><br>
+
+                        <label>Birthplace:</label>
+                        <input type="text" 
+                               name="birthPlace" 
+                               placeholder="City/Province" 
+                               required><br>
+
+                        <label>Email Address:</label>
+                        <input type="email" 
+                               name="emailAddress" 
+                               placeholder="e.g. cooldude@bmail.com" 
+                               required ><br>
+
+                        <label>Cellphone Number:</label>
+                        <input type="tel" 
+                               name="cellNum" 
+                               placeholder="0XXX-XXXXXXX" 
+                               minlength="11" 
+                               maxlength="11" 
+                               required><br>
+
+                        <label>Landline:</label>
+                        <input type="tel" 
+                               name="landNum" 
+                               placeholder="XXXXXXX" 
+                               minlength="7" 
+                               maxlength="7" 
+                               required><br>
+
+                        <div>
+                            <h3>Address</h3>
+                        </div>
+
+                        <label>House Number:</label>
+                        <input type="number" 
+                               name="hNumber" 
+                               placeholder="e.g. 19" 
+                               required><br>
+
+                        <label>Building Name:</label>
+                        <input type="text" 
+                               name="buildName" 
+                               placeholder="e.g. Cool Building " 
+                               required><br>
+
+                        <label>Street Name:</label>
+                        <input type="text" 
+                               name="streetName" 
+                               placeholder="e.g. Cool Street" 
+                               required><br>
+
+                        <label>Village Name:</label>
+                        <input type="text" 
+                               name="vName" 
+                               placeholder="e.g. Cool Village" 
+                               required><br>
+
+                        <label>Barangay Name:</label>
+                        <input type="text" 
+                               name="barName" 
+                               placeholder="e.g. Cool Barangay" 
+                               required><br>
+
+                        <label>City:</label>
+                        <input type="text" 
+                               name="city" 
+                               placeholder="e.g. Makati" 
+                               required><br>
+
+                        <label>ZIP Code:</label>
+                        <input type="number" 
+                               name="zip" 
+                               placeholder="e.g. 56328" 
+                               required 
+                               min=0 
+                               max=99999><br>
+
+                        <label>Province:</label>
+                        <input type="text" 
+                               name="province" 
+                               placeholder="e.g. Cebu" 
+                               required><br>
+
+                        <label>Country:</label>
+                        <input type="text" 
+                               name="country" 
+                               placeholder="e.g. Philippines" 
+                               required><br>
+
+                        <div><h3>Guardian Information</h3></div>
+
+                        <label>First Name:</label>
+                        <input type="text" 
+                               name="gFName" 
+                               placeholder="e.g. Christina" 
+                               required><br>
+
+                        <label>Middle Name:</label>
+                        <input type="text" 
+                               name="gMName" 
+                               placeholder="e.g. Pauline" 
+                               required><br>
+
+                        <label>Last Name:</label>
+                        <input type="text" 
+                               name="gLName" 
+                               placeholder="e.g. Baconia" 
+                               required><br>
+
+                        <label>Gender:</label>
+                        <select name="guardiangender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select><br>
+
+                        <label>Relation to Student:</label>
+                        <input type="text" 
+                               name="gRelation" 
+                               placeholder="e.g. Father/Mother" 
+                               required><br>
+
+                        <label>Occupation:</label>
+                        <input type="text" 
+                               name="gOccupation" 
+                               placeholder="e.g. Teacher/Engineer" 
+                               required><br>
+
+                        <label>Email Address:</label>
+                        <input type="email" 
+                               name="gEmailAddress" 
+                               placeholder="e.g. coolmom@bmail.com" 
+                               required><br>
+
+                        <label>Cellphone Number:</label>
+                        <input type="tel" 
+                               name="gCellNum" 
+                               placeholder="0XXX-XXXXXXX" 
+                               minlength="11" 
+                               maxlength="11" 
+                               required><br>
+
+                        <script type = "text/javascript">
+                          function xd(addtoDB){
+                            window.location.href("connect.php");
+                          }
+                        </script>
+                        
+                        <div class=submit>
+                            <input class="MyButton" 
+                                   type="submit" 
+                                   value="Submit" onclick="addtoDB()"/>
+                        </div>   
+                    </form>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy;2018 BORS-ConnectSix.
+        </div>
+    </body>
+</html>

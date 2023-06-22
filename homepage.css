@@ -1,0 +1,79 @@
+body{
+    background-color: #233e62;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    background-color: #233e62;
+    color:white;
+    font-size: 50px;
+    margin-bottom: 10;
+    margin-top: 40;
+    margin-left: 10;
+}
+
+#pane{
+    background-color: #304e75;
+    border-color: white;
+    border-style:solid;
+    padding: 50;
+    border-radius: 10px;
+    padding-top: 40;
+}
+
+#content{
+    background-color:white;
+    padding: 20 0 20 0;
+    font-size:12;
+    border-radius: 10px;
+    margin: 0 300 0 300;
+}
+
+h2{
+    color:#093754;
+    font-size: 30px;
+    text-align: center;
+}
+
+form input{
+    width: 100%;
+    padding:5; 
+    align-self:auto;
+    margin: 5 0 10 0;
+}
+
+.submit{
+    text-align: center;
+}
+
+input.MyButton{
+    width: 300px;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 130%;
+    background: #304e75;
+    color: white;
+    border-radius: 8px;
+}
+
+input.MyButton:hover{
+    background-color: #233e62;
+}
+
+#logout{
+    text-align: center;
+}
+
+#logout input{
+    width:150;
+    margin: 40 0 0 0;
+    padding: 10 10 10 10;
+    font-size:15;
+}
+
+.footer{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10;
+}

@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title> Course Registration Form | BORS</title>
+    <link rel="stylesheet" href="regform.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+</head>
+    <body>
+        <div>
+            <h1>Barangka Online Registration System</h1>
+        </div>
+        <div id="pane">
+            <div id="content">
+                    <form method="post" action="connectAdminClass.php">
+                        <div id=registration>
+                            <h3>Barankga Course Registration Form</h3>
+                        </div>
+                        <hr>
+                        <div>
+                            <h3>Course Information</h3>
+                        </div>
+                        <div>
+                            <h4>Please fill out the entire form. Write N/A where necessary.</h4>
+                        </div>
+
+          
+                        <label>Course Code:</label>
+                        <input type="text" 
+                               name="cCode" 
+                               placeholder="e.g. PE100" 
+                               required><br>
+                        
+                        <label>Course Name:</label>
+                        <input type="text" 
+                               name="cName" 
+                               placeholder="e.g. Intense Basketball" 
+                               required><br>
+
+                        <label>Grade Level:</label>
+                        <select name='gradeLevel'>
+                            <option value="Seven">7</option>
+                            <option value="Eight">8</option>
+                            <option value="Nine">9</option>
+                            <option value="Ten">10</option>
+                            <option value="Eleven">11</option>
+                            <option value="Twelve">12</option>
+                        </select><br>
+                        
+                        <label>Subject:</label>
+                        <select name='subject'>
+                            <option value="Araling Panlipunan">Araling Panlipunan</option>
+                            <option value="English">English</option>
+                            <option value="Filipino">Filipino</option>
+                            <option value="Math">Math</option>
+                            <option value="PE">Physical Education</option>
+                            <option value="Science">Science</option>
+                        </select><br>
+
+                        <script type = "text/javascript">
+                          function xd(addtoDB){
+                            window.location.href("connectAdminClass.php");
+                          }
+                        </script>
+                        <div class=submit>
+                            <input class="MyButton" 
+                                   type="submit" 
+                                   value="Submit" onclick="addtoDB()"/>
+                        </div>
+                    </form>
+            </div>
+        </div>
+        <div id="footer">
+            Copyright &copy;2018 BORS-ConnectSix.
+        </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+body{
+    background-color: #233e62;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    background-color: #233e62;
+    color:white;
+    font-size: 50px;
+    margin-bottom: 10;
+    margin-top: 40;
+    margin-left: 10;
+}
+
+#pane{
+    background-color: #304e75;
+    border-color: white;
+    border-style:solid;
+    padding: 30;
+    border-radius: 10px;
+    padding-top: 30;
+}
+
+#content{
+    background-color:white;
+    padding: 20 10 20 10;
+    font-size:12;
+    border-radius: 10px;
+}
+
+h2{
+    color:#093754;
+    font-size: 30px;
+    text-align: center;
+}
+
+form input{
+    width: 100%;
+    padding:5; 
+    align-self:auto;
+    margin: 5 0 10 0;
+}
+
+.submit{
+    text-align: center;
+}
+
+input.MyButton{
+    width: 300px;
+    padding: 13px;
+    cursor: pointer;
+    font-size: 130%;
+    background: #304e75;
+    color: white;
+    border-radius: 8px;
+}
+
+input.MyButton:hover{
+    background-color: #233e62;
+}
+
+#table{
+    padding: 20 0 30 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13;
+}
+
+th{
+    height: 50;
+    background-color:#304e75;
+    color: white;
+}
+
+th, td{
+    padding: 5px;
+    margin: 10;
+    text-align: center;
+    white-space: nowrap;
+}
+
+table, th, td{
+    border: 1px solid black;
+    
+}
+
+tr:hover {background-color: #f5f5f5;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+.footer{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10;
+}

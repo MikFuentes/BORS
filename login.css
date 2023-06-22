@@ -1,0 +1,80 @@
+body{
+    background-color: #233e62;
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    color:white;
+    font-size: 50px;
+    margin-bottom: 10;
+    margin-top: 40;
+    margin-left: 10;
+}
+
+#pane{
+    background-color: #304e75;
+    padding: 50 300 50 300;
+    border-radius: 10px;
+    border-color: aliceblue;
+    border-style:solid;
+}
+
+#content{
+    background-color:white;
+    padding: 10 0 15 0;
+    font-size:12;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 150 0 150;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+h2{
+    color:#233e62;
+    font-size: 25;
+}
+
+form input{
+    width: 60%;
+    padding:5; 
+    align-self: center;
+    margin: 10 0 0 0;
+}
+
+.submit{
+    text-align: center;
+}
+
+input.MyButton{
+    width: 200px;
+    padding: 9px;
+    cursor: pointer;
+    font-size: 130%;
+    background: #304e75;
+    color: white;
+    border-radius: 8px;
+}
+
+input.MyButton:hover{
+    background-color: #233e62;
+}
+
+h3{
+    color:#233e62;
+    font-size: 14;
+}
+
+#footer{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10;
+}
