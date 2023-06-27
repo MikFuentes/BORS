@@ -2,7 +2,7 @@
 	$dbhost = "localhost";
 	$dbuser = "root";
 	$dbpass = "";
-	$db = "bores";
+	$db = "bors";
 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
  	$username = filter_input(INPUT_POST, 'userID' );
  	$password = filter_input(INPUT_POST, 'password' );

@@ -2,7 +2,7 @@
 	$dbhost = "localhost";
 	$dbuser = "root";
 	$dbpass = "";
-	$db = "bores";
+	$db = "bors";
 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
 
 	//course
@@ -11,8 +11,7 @@
 	$gradelevel = isset($_POST['gradeLevel'])?$_POST['gradeLevel']:'not yet';
 	$subject = filter_input(INPUT_POST, 'subject');
 
-	$sql1 = "INSERT INTO course (Course_Code, Course_Name, Grade_Level, Subject)
-		values ('$coursecode', '$coursename','7', '$subject')";
+	$sql1 = "INSERT INTO COURSE VALUES ('$coursecode', '$coursename', '$gradelevel', '$subject')";
 
 	if ($conn -> query($sql1)){
 		echo readfile("adminClassAddConfirm.php");

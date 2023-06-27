@@ -11,7 +11,15 @@
         <div id="pane">
             <div id="content">
                 <div>
-                    <h2>Confirm Add Class</h2>  
+                    <h2>Confirm Add Class</h2>
+                    <div class=submit>
+                            <!--
+                            Should go back to either studentHome.html or login.html
+                            -->
+                            <input class="MyButton" 
+                                   type="button" 
+                                   value="Back" onclick="window.location.href='regformClasses.html'"/>
+                        </div>   
                     <form>
                         <div class=submit>
                             <!--

@@ -1,10 +1,17 @@
+:root {
+    --blue: #304e75;
+    --dark-blue: #233e62;
+    --red: #ea0027;
+    --white: white;
+}
+
 body{
-    background-color: #233e62;
+    background-color: var(--dark-blue);
     font-family: 'Lato', sans-serif;
 }
 
 h1{
-    color:white;
+    color:var(--white);
     font-size: 50px;
     margin-bottom: 10;
     margin-top: 40;
@@ -12,15 +19,15 @@ h1{
 }
 
 #pane{
-    background-color: #304e75;
+    background-color: var(--blue);
     padding: 50 300 50 300;
     border-radius: 10px;
-    border-color: aliceblue;
+    border-color: var(--white);
     border-style:solid;
 }
 
 #content{
-    background-color:white;
+    background-color:var(--white);
     padding: 10 0 15 0;
     font-size:12;
     border-radius: 10px;
@@ -38,7 +45,7 @@ a:hover{
 
 
 h2{
-    color:#233e62;
+    color:var(--dark-blue);
     font-size: 25;
 }
 
@@ -58,23 +65,40 @@ input.MyButton{
     padding: 9px;
     cursor: pointer;
     font-size: 130%;
-    background: #304e75;
-    color: white;
+    background: var(--blue);
+    color: var(--white);
     border-radius: 8px;
 }
 
 input.MyButton:hover{
-    background-color: #233e62;
+    background-color: var(--dark-blue);
 }
 
 h3{
-    color:#233e62;
+    color: var(--dark-blue);
     font-size: 14;
 }
 
 #footer{
-    color: white;
+    color: var(--white);
     font-size: 12px;
     text-align: center;
     margin-top: 10;
+}
+
+.animatedForm_errorMessage:empty {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+}
+
+.animatedForm_errorMessage {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 4px;
+    max-height: 1000px;
+    opacity: 1;
+    color: var(--red);
+    transition: all .2s ease-in-out;
 }

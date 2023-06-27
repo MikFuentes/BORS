@@ -2,9 +2,10 @@
 	$dbhost = "localhost";
 	$dbuser = "root";
 	$dbpass = "";
-	$db = "bores";
+	$db = "bors";
 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
-	//student
+
+	// Student
 	$LRN = filter_input(INPUT_POST, 'lrn' );
 	$firstname = filter_input(INPUT_POST, 'fName');
 	$middlename = filter_input(INPUT_POST, 'mName');
@@ -27,17 +28,17 @@
 	$country = filter_input(INPUT_POST, 'country');
 	//remember to concat name + address
 
-	//education_history
+	// Education_history
 	$pSchool = filter_input(INPUT_POST, 'pSchool');
 	$cSchool = filter_input(INPUT_POST, 'cSchool');
 	$GLAtt = isset($_POST['gAttainment'])?$_POST['gAttainment']:'not yet';
 
-	//registration
+	// Registration
 	$DoR1 = strtotime($_POST["regDate"]);
 	$DoR2 =  date('Y-m-d H:i:s', $DoR1);
 	$GLApp = isset($_POST['gradeLevel'])?$_POST['gradeLevel']:'not yet';
 
-	//guardian
+	// Guardian
 	$gfirstname = filter_input(INPUT_POST, 'gFName');
 	$gmiddlename = filter_input(INPUT_POST, 'gMName');
 	$glastname = filter_input(INPUT_POST, 'gLName');
@@ -71,22 +72,22 @@
 	if ($conn -> query($sql)){
 		echo readfile("regformConfirmStudent.php");
 	}
-	if ($conn -> query($sql2)){
-		//echo readfile("regformConfirm.html");
-	}
-	else{
-		//echo readfile("regformConfirm.html");
-	}
-	if ($conn -> query($sql3)){
-		//echo readfile("regformConfirm.html");
-	}
-	else{
-		//echo "Failed to Insert reg";
-	}
-	if ($conn -> query($sql4)){
-		//echo readfile("regformConfirm.html");
-	}
-	else{
-		//echo "Failed to Insert guardian";
-	}
+	// if ($conn -> query($sql2)){
+	// 	//echo readfile("regformConfirm.html");
+	// }
+	// else{
+	// 	//echo readfile("regformConfirm.html");
+	// }
+	// if ($conn -> query($sql3)){
+	// 	//echo readfile("regformConfirm.html");
+	// }
+	// else{
+	// 	//echo "Failed to Insert reg";
+	// }
+	// if ($conn -> query($sql4)){
+	// 	//echo readfile("regformConfirm.html");
+	// }
+	// else{
+	// 	//echo "Failed to Insert guardian";
+	// }
 ?>
